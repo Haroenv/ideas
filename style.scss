@@ -1,0 +1,27 @@
+---
+# scss
+---
+body {
+  font-family: system, -apple-system, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #7f1734;
+  color: #FFF;
+}
+
+.content {
+  flex: 1;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-size: .8em;
+}
