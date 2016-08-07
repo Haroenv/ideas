@@ -5,6 +5,7 @@ layout: index
 * jekyll layout for js/css minifying
 * jekyll layout for autoprefixing
 * emojifier, get a list of words used with emoji, sprice up any text
+* running app that compares with historical olympic data
 
 All these ideas are free of charge, but I'd appreciate it if you let me know that it became reality.
 
