@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  line-height: 1.6;
 }
 
 header {
@@ -19,9 +20,31 @@ header {
   flex: 1;
   max-width: 56rem;
   margin: 0 auto;
+  padding: 1em;
 }
 
 footer {
   text-align: center;
   font-size: .8em;
+}
+
+ul {
+  padding: 0 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  font-size: inherit;
+}
+
+input[type=text] {
+  flex-grow: 1;
 }

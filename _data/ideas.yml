@@ -1,7 +1,14 @@
-- jquery decompiler
-- jekyll layout for js/css minifying
-- jekyll layout for autoprefixing
-- emojifier, get a list of words used with emoji, sprice up any text
-- running app that compares with historical olympic data [olympic-runner](/olympic-runner)
-- mobile data and aHealth complications
-- github api way to edit this list as `contenteditable`
+- checked: false
+  text: jquery decompiler
+- checked: false
+  text: jekyll layout for js/css minifying
+- checked: false
+  text: jekyll layout for autoprefixing
+- checked: false
+  text: emojifier, get a list of words used with emoji, sprice up any text
+- checked: false
+  text: running app that compares with historical olympic data [olympic-runner](/olympic-runner)
+- checked: false
+  text: mobile data and aHealth complications
+- checked: false
+  text: github api way to edit this list as `contenteditable`
