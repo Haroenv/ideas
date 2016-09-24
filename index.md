@@ -16,7 +16,7 @@ Ping me on twitter [@Haroenv](https://twitter.com/Haroenv)
 const dataUrl = 'https://github.com/Haroenv/ideas/edit/gh-pages/_data/ideas.yml';
 function createForm() {
   var items = document.getElementById('items');
-  const insert = '<form id="form"><input type="submit" value="+"><input type="text" name="idea" id="idea" placeholder="new idea!"></form><a href="'+dataUrl+'">+</a>';
+  const insert = '<form id="form"><input type="submit" value="+"><input type="text" name="idea" id="idea" placeholder="new idea!"></form><pre id="hidden"></pre><button id="copy">execute</button>';
   const item = document.createElement('li');
   item.innerHTML = insert;
   items.appendChild(item);
@@ -25,11 +25,33 @@ function createForm() {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     const newElement = {
-      idea: e.target.idea.value,
+      text: e.target.idea.value,
       checked: false
     };
-    console.log(newElement);
+    const newElementYaml = '- checked: false\n  text: '+e.target.idea.value;
+    hidden.textContent = newElementYaml;
+    copy.focus();
   });
+  copy.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (copyEl(hidden)) {
+      location.href = dataUrl;
+    }
+  });
+}
+
+function copyEl(element) {
+  console.log(element);
+  var range = document.createRange();
+  range.selectNode(element);
+  window.getSelection().addRange(range);
+  try {
+      var copy = document.execCommand('copy');
+      return copy;
+  } catch (err) {
+      throw 'Oops, unable to copy';
+  }
+  window.getSelection().removeAllRanges();
 }
 if (localStorage.user === 'haroen') {
   createForm();
