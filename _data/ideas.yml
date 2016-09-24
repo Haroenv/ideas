@@ -10,5 +10,5 @@
   text: running app that compares with historical olympic data [olympic-runner](/olympic-runner)
 - checked: false
   text: mobile data and aHealth complications
-- checked: false
-  text: github api way to edit this list as `contenteditable`
+- checked: true
+  text: a way to add to this list easily 
