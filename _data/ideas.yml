@@ -12,3 +12,5 @@
   text: mobile data and aHealth complications
 - checked: true
   text: a way to add to this list easily 
+- checked: false
+  text: a talk about how to deal with feedback [wip]
