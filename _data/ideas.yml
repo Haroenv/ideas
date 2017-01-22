@@ -14,3 +14,5 @@
   text: a way to add to this list easily 
 - checked: false
   text: a talk about how to deal with feedback [wip]
+- checked: false
+  text: json file of emoji with loads of keywords (searched via algolia?)
