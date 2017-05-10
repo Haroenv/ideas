@@ -18,3 +18,5 @@
   text: json file of emoji with loads of keywords (searched via algolia?)
 - checked: false
   text: A game in which one person does tactical things and the other needs to mash as much buttons as possible to do side-quests
+- checked: false
+  text: jsdoc.now.sh -> jsdoc as a service
